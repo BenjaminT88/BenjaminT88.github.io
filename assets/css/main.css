@@ -2550,7 +2550,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		list-style: none;
-		padding: 0;
+		padding: 1em 0;
 		width: 100%;
 	}
 
@@ -2978,6 +2978,38 @@ input, select, textarea {
 		.wrapper.style2 {
 			background-color: #2e3842;
 		}
+
+		/* additional CSS from Benjamin */
+		.wrapper.style2 .giant, .wrapper.style3 .giant {
+			font-size: 2rem;
+			margin-bottom: 0;
+			text-decoration: underline;
+		}
+
+		.wrapper.style2 .align-center, .wrapper.style3 .align-center {
+			padding: 1em 0;
+		}
+
+		.row .icons .icon{
+			border: none;
+		}
+
+		.row .icons .icon::before {
+			font-size: 2.5em;
+		}
+
+		#redux {
+			-webkit-transform: unset;
+			transform: unset;
+			margin-top: -15px;
+		}
+
+		#redux + p {
+			margin-top: 8px;
+		}
+
+
+		/* End of additional CSS */
 
 		.wrapper.style3 {
 			background-color: #505393;
@@ -3752,22 +3784,34 @@ input, select, textarea {
 
 /* CTA */
 
+	#cta {
+		text-align: center;
+	}
+
 	#cta .inner {
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: flex; */
 		max-width: 45em;
 	}
 
-		#cta .inner header {
+	#cta .inner .icons {
+		margin: 2em 0;
+	}
+
+	#cta .inner .icons .icon:before {
+		font-size: 2em;
+	}
+
+		/* #cta .inner header {
 			-moz-order: 1;
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
 			padding-right: 3em;
 			width: 70%;
-		}
+		} */
 
 			#cta .inner header p {
 				color: inherit;
@@ -3885,7 +3929,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 1em 0;
 		background-color: #1d242a;
 		text-align: center;
 	}
@@ -3908,6 +3952,7 @@ input, select, textarea {
 			letter-spacing: 0.225em;
 			list-style: none;
 			padding: 0;
+			margin: 0;
 			text-transform: uppercase;
 		}
 
